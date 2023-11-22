@@ -3,7 +3,6 @@ const iost = require("./iost");
 const wallet = require("./wallet");
 const parse_args = require("./parse_args");
 
-
 (async function () {
   const { amount } = parse_args({
     amount: (value) => {
