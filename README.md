@@ -8,12 +8,13 @@ IOSTのストレージを用いてhelloメッセージを返すスマートコ�
 
 ### パッケージのインストール
 
-```
+```sh
 npm install
 ```
+
 ### テストネットのアカウントを作成
 
-```
+```sh
 npm run create id:hogehoge
 ```
 
@@ -26,56 +27,55 @@ npm run create id:hogehoge
 ## コマンド
 
 ### アカウントの環境関連
+
 ストレージの利用トークンを購入する。
 
-```
+```sh
 npm run ram amount:3000
 ```
 
-
 トランザクション発行手数料トークンを購入する。
 
-```
+```sh
 npm run gas amount:10
 ```
 
 トークンの残高を確認。
 
-```
+```sh
 npm run balance id:hogehoge
 ```
 
-
 ### スマートコントラクトのデプロイなど
+
 スマートコントラクトのデプロイを実行する。
 
-```
+```sh
 npm run deploy
 ```
 
 デプロイしたスマートコントラクトのアップデートを実行する。
 
-```
+```sh
 npm run update
 ```
-
 
 ### スマートコントラクトの実行例
 
 メッセージ内容を変更
 
-```
+```sh
 npm run change msg:hey
 ```
 
 メッセージ内容を表示
 
-```
+```sh
 npm run view
 ```
 
 helloを実行
 
-```
+```sh
 npm run hello
 ```
