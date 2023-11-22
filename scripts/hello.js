@@ -3,7 +3,6 @@ const MyContract = require("./contract");
 const wallet = require("./wallet");
 
 (async function () {
-  
   const tx = iost.createTransaction({ gasLimit: 500000 });
   await iost.setServerTimeDiff();
   tx.setTime(1000, 0, iost.serverTimeDiff);

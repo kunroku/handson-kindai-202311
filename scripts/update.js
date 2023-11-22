@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { generateContractABI, OfficialContracts } = require('@iost/client');
+const { generateContractABI, OfficialContracts } = require("@iost/client");
 const iost = require("./iost");
 const wallet = require("./wallet");
 
@@ -9,7 +9,7 @@ const wallet = require("./wallet");
   if (!address) {
     throw new Error("contract not deloyed");
   }
-  const source = fs.readFileSync(`${__dirname}/../contract/Contract.js`, 'utf-8');
+  const source = fs.readFileSync(`${__dirname}/../contract/Contract.js`, "utf-8");
   const abi = generateContractABI(source);
 
   const tx = iost.createTransaction({ gasLimit: 500000 });
