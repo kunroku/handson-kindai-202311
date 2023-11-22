@@ -1,5 +1,5 @@
-const iost = require('./iost');
-const parse_args = require('./parse_args');
+const iost = require("./iost");
+const parse_args = require("./parse_args");
 
 (async function () {
   const { id } = parse_args({
