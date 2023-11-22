@@ -1,0 +1,26 @@
+{
+  "name": "handson-kindai-202311",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "node scripts/deploy",
+    "update": "node scripts/update",
+    "signUp": "node scripts/signUp",
+    "ram": "node scripts/ram",
+    "gas": "node scripts/gas",
+    "balance": "node scripts/balance",
+    "hello": "node scripts/hello",
+    "change": "node scripts/change",
+    "view": "node scripts/view"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@iost/client": "git+https://github.com/kunroku/iost-client.git"
+  },
+  "devDependencies": {
+    "@types/iost-contract": "^3.4.1"
+  }
+}
