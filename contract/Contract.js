@@ -17,7 +17,6 @@ class Contract {
    */
   hello() {
     // add msg getter here
-    const msg = storage.get("msg");
     return `${msg}, ${tx.publisher}!`;
   }
   /**
